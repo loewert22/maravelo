@@ -4,10 +4,138 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Maravelo</title>
+ 
+    <!--her linker vi til bootstrap css --> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+      <!--her linker vi til vores eget css --> 
+      <link rel="stylesheet" href="style.css">
+    <!--linker til vores font--> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
-    <H1> Hej sille </h1>
-    <h2> Hvordan går det? </2> 
+    
+    <!--Maravelos logo-->
+    <img class="billede" src="img/maravelo.sort.logo.png" alt="Maravelo logo">
+    <!--søgefelt-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Søg" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Søg</button>
+          </form>
+        </div>
+      </nav>
+<!--menu-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">Forside</a>
+              <div class="vertical-line" style="height: 30px;"></div>
+              <a class="nav-link" href="design.html">Design your bike</a>
+              <div class="vertical-line" style="height: 30px;"></div>
+              <a class="nav-link" href="galleri.html">Galleri</a>
+              <div class="vertical-line" style="height: 30px;"></div>
+              <a class="nav-link" href="getyourbike.html">Get your bike</a>
+              <div class="vertical-line" style="height: 30px;"></div>
+              <a class="nav-link" href="kontakt.html">Kontakt</a>
+           
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+
+
+
+<div class="video">
+    <video loop autoplay muted width="100%" height="100%" >
+      <source class="play" src="joeandthejuice-kampagne.mp4" type="video/mp4">
+
+    </video>
+
+<div class="row align-items-center">
+    <div class="col-lg-6">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ex voluptates vero minima alias, numquam provident, repellendus excepturi aspernatur atque facilis voluptate ad accusamus nemo molestias, facere tempora corporis. Veritatis!
+
+      </p>
+    </div>
+    <div class="col-lg-6">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, corrupti neque ut dolor quod ipsam nihil illo. Modi nulla recusandae et blanditiis eos. Praesentium consectetur aperiam alias, dolor quibusdam ipsa?</p>
+    </div>
+   
+  </div>
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/cykellogo.JPG" class="d-block w-100" alt="Maravelo el cykel">
+      </div>
+      <div class="carousel-item">
+        <img src="img/P1012629.JPG" class="d-block w-100" alt="Maravelo el cykel">
+      </div>
+      <div class="carousel-item">
+        <img src="img/P1012633.JPG" class="d-block w-100" alt="Maravelo el cykel">
+      </div>
+      <div class="carousel-item">
+        <img src="img/semereher.png" class="d-block w-100" alt="Se mere til maravelos cykler her">
+      </div>
+      <div class="carousel-item">
+        <img src="img/P1012633.JPG" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<footer class="footer">
+
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h5 class="footer-overskrift">Nyhedsbrev</h5>
+          <p class="footer-tekst">Vil du være med på de nyeste nyheder og tilbud direkte i din indbakke? <br> Så tilmeld dig her, og bliv en del af vores fordelagtige kundeklub.</p>
+          <div class="main">
+            <form id="singular-form">
+                <button class="shown" type="button" id="subs">Tilmeld dig her</button>
+                <div id="email-input">
+                    <input type="text" placeholder="E-mail" id="email">
+                    <button type="button" class="addbut1" disabled="disabled">Tilmeld</button>
+                </div>
+                <div id="success">Tak for tilmelding!</div>
+            </form>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script  src="function.js"></script>
+        </div>
+        <div class="col-lg-3">
+          <h5 class="footer-overskrift">Åbningstider</h5>
+          <p class="footer-tekst"><strong> Mandag-søndag</strong> <br> <strong> Butik</strong>: 10:00-17:00</p>
+          <h5 class="footer-overskrift">Adressse</h5>
+          <p class="footer-tekst">Bakkegårdsvej 106 | 3050 Humlebæk | Denmark</p>
+        </div>
+        <div class="col-lg-3">
+          <h5 class="footer-overskrift">Kontakt</h5>
+          <p class="footer-tekst"><strong>Tlf</strong>: +45 60946095 <br><strong>Mail</strong>: maravelo@maravelo.dk</b></p>
+          <h5 class="footer-overskrift">Følg os</h5>
+          <p class="footer-tekst">sociale medier</p>
+        </div>
+      </div>
+</footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+<!--Vores javaspript-->
+    <script src="main.js"></script>
 </body>
 </html>
